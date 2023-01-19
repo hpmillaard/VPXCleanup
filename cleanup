@@ -1,0 +1,16 @@
+shell
+df -h
+rm -r -f /var/core/*
+rm -r -f /var/crash/*
+rm -r -f /var/nsinstall/*
+rm -r -f /var/nstrace/*
+rm -r -f /var/tmp/*
+find /var/log/ -mtime +7 -delete
+find /var/nslog/ -mtime +7 -delete
+find /var/nsproflog/ -mtime +7 -delete
+find /var/nsproflog/ -mtime +7 -delete
+find /var/nssynclog/ -mtime +7 -delete
+find /var/nssynclog/ -mtime +7 -delete
+find /var/nstmp/ -mtime +7 -delete
+find /var/mps/log/ -mtime +7 -delete
+df -h
